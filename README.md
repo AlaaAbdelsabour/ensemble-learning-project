@@ -37,19 +37,21 @@ Then, an ensemble model was built using:
 We evaluated different ensemble configurations using Voting Classifier:
 
 ### 🟦 1. Voting Classifier (All Models)
-- Models included: Random Forest, Extra Trees, SVM, MLPClassifier
-- Accuracy: **0.9749**
-
----
-
-### 🟩 2. Voting Classifier (Without SVM)
-- Models included: Random Forest, Extra Trees,MLPClassifier
-
+- Models included: Random Forest, Extra Trees, SVM, MLPClassifier.
+  
 **Individual Model Performance:**
 - Random Forest: 0.9736
 - Extra Trees: 0.9743
 - SVM: 0.8881
 - MLPClassifier: 0.966
+
+**Ensemble Accuracy:**
+- Accuracy: **0.9749**
+
+---
+
+### 🟩 2. Voting Classifier (Without SVM)
+- Models included: Random Forest, Extra Trees,MLPClassifier.
 
 **Ensemble Accuracy:**
 - Voting Classifier: **0.9769**
