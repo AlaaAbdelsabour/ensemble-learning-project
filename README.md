@@ -24,6 +24,7 @@ The following classifiers were trained individually:
 - Random Forest Classifier
 - Extra Trees Classifier
 - Support Vector Machine (SVM)
+- MLPClassifier
 
 Then, an ensemble model was built using:
 
@@ -31,23 +32,27 @@ Then, an ensemble model was built using:
 
 ---
 
-## 🔗 Ensemble Learning Approach
+## 📊 Results & Ensemble Comparison
 
-We experimented with combining multiple models to improve performance.
+We evaluated different ensemble configurations using Voting Classifier:
 
-Two scenarios were tested:
-
-### 1. Voting Classifier with all models
-- Includes: Random Forest, Extra Trees, SVM
+### 🟦 1. Voting Classifier (All Models)
+- Models included: Random Forest, Extra Trees, SVM, MLPClassifier
 - Accuracy: **0.9749**
 
-### 2. Voting Classifier without SVM
-- Models: Random Forest + Extra Trees
-- Individual accuracies:
-  - Random Forest: 0.968
-  - Extra Trees: 0.9703
-  - SVM: 0.965
-- Voting Accuracy: **0.9727**
+---
+
+### 🟩 2. Voting Classifier (Without SVM)
+- Models included: Random Forest, Extra Trees,MLPClassifier
+
+**Individual Model Performance:**
+- Random Forest: 0.9736
+- Extra Trees: 0.9743
+- SVM: 0.8881
+- MLPClassifier: 0.966
+
+**Ensemble Accuracy:**
+- Voting Classifier: **0.9769**
 
 ---
 
@@ -64,8 +69,6 @@ Two scenarios were tested:
 - Python
 - Scikit-learn
 - NumPy
-- Pandas
-- Matplotlib
 
 ---
 
